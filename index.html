@@ -56,16 +56,16 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title" id="contactModalLabel">Send me an email</h4>
 					</div>
-					<form action="http://formspree.io/me@ryanralph.net" method="POST">
+					<form id="form" action="http://formspree.io/me@ryanralph.net" method="POST">
 						<div class="modal-body">
 							
 							  <div class="form-group">
 							    <label for="email-from" class="control-label">From:</label>
-							    <input type="email" class="form-control required" id="email-from" name="name">
+							    <input type="email" class="form-control required" id="email-from" name="_replyto" placeholder="Email Address">
 							  </div>
 							  <div class="form-group">
 							    <label for="email-body" class="control-label">Message:</label>
-							    <textarea class="form-control required" id="email-body" name="_replyto" rows="10"></textarea>
+							    <textarea class="form-control required" id="email-body" name="message" rows="10"  placeholder="Message...."></textarea>
 							  </div>
 							  <input type="text" name="_gotcha" style="display:none" />
 							  <input type="hidden" name="_next" value="#thanks" />
@@ -102,14 +102,17 @@
 			})
 			//Add logic to this 
 			$('#send').on('click', function () {
-				var $btn = $(this).button('loading')
-				
+				var $btn = $(this);
 				$.ajax({
 				    url: "//formspree.io/me@ryanralph.net", 
 				    method: "POST",
-				    data: {message: "hello!"},
-				    dataType: "json"
+				    data: $('#form').serialize(),
+				    dataType: "json",
+				    beforeSend: function() { $btn.button('loading'); },
+  					success: function(data) { $('#contact').modal('toggle'); alert("sent"); },
+  					error: function(err) { $btn.button('reset'); alert("error");}
 				});
+				
 			});
 		</script>
 	</body>
