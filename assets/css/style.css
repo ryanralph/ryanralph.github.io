@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f6f6f6;
+	font-family: 'Open Sans', sans-serif;
+}
+#divider {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: 1px;
+	background:#717171;
+	border-bottom:1px solid #313030;
+}
+#contactlink {
+	padding-top: 20px;
+}
+#social {
+	padding-top: 20px;
+}
+#name {
+	padding-bottom: 20px;
+}
+.tagline {
+	padding-top: 10px;
+}

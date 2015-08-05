@@ -1,34 +1,87 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
-<meta charset="utf-8"/>
-	<title>Ryan Ralph | </title>
-	 <link rel="shortcut icon" href="favicon.ico">
-	 <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div id="photo-wrap">
-	    <div id="photo">
-	        <div id="photo-link"><a href="http://ryanralph.me/"><img src="photo.jpg" alt="Ryan Ralph"></a></div>
-	    </div>
-	</div>	
-	<div id="name">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta name="description" content="The simple homepage of Ryan Ralph">
+    <meta name="author" content="Ryan Ralph">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Ryan Ralph |</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container-fluid text-center">
+      <div class="row">
+		
+        <a href="#"><img src="https://en.gravatar.com/userimage/57346448/8397c1cac617a75b822afea79ee1aec3.jpg?size=200" alt="Ryan Ralph" class="img-circle" /></a>
+		    
 		<h1>Ryan Ralph</h1>
 		<p class="tagline">Electrical Engineering student, Self taught programmer &amp; bitcoin guy from Melbourne Australia</p>
-	</div>
-	<div id="divider"></div>
-	<div id="contact">
-		<a href="mailto:me@ryanralph.net">me@ryanralph.net</a>
-		<div id="social">
-			<ul>
+		<div id="divider"></div>
+        <div id="contactlink"><a href="#contact" id="contactlink" data-toggle="modal" data-target="#contact">me@ryanralph.net</a></div>
+
+        <div id="social">
+			<ul class="list-inline">
 				<li>[<a href="http://blog.ryanralph.net">Blog</a>]</li>
 				<li>[<a href="http://twitter.com/ryanralphdotnet">Twitter</a>]</li>
 				<li>[<a href="http://github.com/ryanralph">Github</a>]</li>
 				<li>[<a href="http://keybase.io/ryanralph">Keybase</a>]</li>
 			</ul>
-		</div>
+		</div> 
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <!-- Contact modal -->
+	<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="contactModalLabel">Send me an email</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<form>
+	          <div class="form-group">
+	            <label for="email-from" class="control-label">From:</label>
+	            <input type="text" class="form-control" id="email-from">
+	          </div>
+	          <div class="form-group">
+	            <label for="email-body" class="control-label">Message:</label>
+	            <textarea class="form-control" id="email-body"></textarea>
+	          </div>
+	        </form>
+	        <p class="small">If you're a security nut you can find my PGP key <a href="https://keybase.io/ryanralph">here.</a></p>
+	      </div>
+	      <div class="modal-footer">
+	      	
+	        <button type="button" id="send" class="btn btn-primary" data-loading-text="Loading... " autocomplete="off">Send</button>
+	        
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
-	<script type="text/javascript">
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    	<script type="text/javascript">
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -38,5 +91,21 @@
 	  ga('send', 'pageview');
 
 	</script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+    	//Autofocus email input in modal when given focus
+    	$('#contact').on('shown.bs.modal', function () {
+		  $('#email-from').focus()
+		})
+		//Add logic to this 
+		$('#send').on('click', function () {
+			var $btn = $(this).button('loading')
+			setTimeout(function(){
+			    $btn.button('reset')
+			    $('#contact').modal('hide')
+			}, 2000);
+		});
+	</script>
+  </body>
 </html>
