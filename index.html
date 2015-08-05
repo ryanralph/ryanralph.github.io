@@ -24,88 +24,93 @@
     <![endif]-->
   </head>
 
-  <body>
-    <div class="container-fluid text-center">
-      <div class="row">
-		
-        <a href="#"><img src="https://en.gravatar.com/userimage/57346448/8397c1cac617a75b822afea79ee1aec3.jpg?size=200" alt="Ryan Ralph" class="img-circle" /></a>
-		    
-		<h1>Ryan Ralph</h1>
-		<p class="tagline">Electrical Engineering student, Self taught programmer &amp; bitcoin guy from Melbourne Australia</p>
-		<div id="divider"></div>
-        <div id="contactlink"><a href="#contact" id="contactlink" data-toggle="modal" data-target="#contact">me@ryanralph.net</a></div>
+	<body>
+		<div class="container-fluid text-center">
+			<div class="row">
 
-        <div id="social">
-			<ul class="list-inline">
-				<li>[<a href="http://blog.ryanralph.net">Blog</a>]</li>
-				<li>[<a href="http://twitter.com/ryanralphdotnet">Twitter</a>]</li>
-				<li>[<a href="http://github.com/ryanralph">Github</a>]</li>
-				<li>[<a href="http://keybase.io/ryanralph">Keybase</a>]</li>
-			</ul>
-		</div> 
+				<a href="#"><img src="https://en.gravatar.com/userimage/57346448/8397c1cac617a75b822afea79ee1aec3.jpg?size=200" alt="Ryan Ralph" class="img-circle fade" /></a>
+				    
+				<h1>Ryan Ralph</h1>
+				<p class="tagline">Electrical Engineering student, Self taught programmer &amp; bitcoin guy from Melbourne Australia</p>
+				<div id="divider" />
+				<div id="contactlink"><a href="#contact" id="contactlink" data-toggle="modal" data-target="#contact">me@ryanralph.net</a></div>
 
-      </div><!-- /.row -->
+				<div id="social">
+					<ul class="list-inline">
+						<li>[<a href="http://blog.ryanralph.net">Blog</a>]</li>
+						<li>[<a href="http://twitter.com/ryanralphdotnet">Twitter</a>]</li>
+						<li>[<a href="http://github.com/ryanralph">Github</a>]</li>
+						<li>[<a href="http://keybase.io/ryanralph">Keybase</a>]</li>
+					</ul>
+				</div> 
 
-    </div><!-- /.container -->
+			</div><!-- /.row -->
 
-    <!-- Contact modal -->
-	<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="contactModalLabel">Send me an email</h4>
-	      </div>
-	      <div class="modal-body">
-	      	<form>
-	          <div class="form-group">
-	            <label for="email-from" class="control-label">From:</label>
-	            <input type="text" class="form-control" id="email-from">
-	          </div>
-	          <div class="form-group">
-	            <label for="email-body" class="control-label">Message:</label>
-	            <textarea class="form-control" id="email-body"></textarea>
-	          </div>
-	        </form>
-	        <p class="small">If you're a security nut you can find my PGP key <a href="https://keybase.io/ryanralph">here.</a></p>
-	      </div>
-	      <div class="modal-footer">
-	      	
-	        <button type="button" id="send" class="btn btn-primary" data-loading-text="Loading... " autocomplete="off">Send</button>
-	        
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+		</div><!-- /.container -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    	<script type="text/javascript">
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<!-- Contact modal -->
+		<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="contactModalLabel">Send me an email</h4>
+					</div>
+					<form action="http://formspree.io/me@ryanralph.net" method="POST">
+						<div class="modal-body">
+							
+							  <div class="form-group">
+							    <label for="email-from" class="control-label">From:</label>
+							    <input type="email" class="form-control required" id="email-from" name="name">
+							  </div>
+							  <div class="form-group">
+							    <label for="email-body" class="control-label">Message:</label>
+							    <textarea class="form-control required" id="email-body" name="_replyto" rows="10"></textarea>
+							  </div>
+							  <input type="text" name="_gotcha" style="display:none" />
+							  <input type="hidden" name="_next" value="#thanks" />
+							<p class="small">If you're a security nut you can find my PGP key <a href="https://keybase.io/ryanralph">here.</a></p>
+						</div>
+						<div class="modal-footer">
+							<input type="submit" value="Send">
+							<button type="button" id="send" class="btn btn-primary" data-loading-text="Sending... " autocomplete="off">Send</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 
-	  ga('create', 'UA-61359637-1', 'auto');
-	  ga('send', 'pageview');
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+			<script type="text/javascript">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script>
-    	//Autofocus email input in modal when given focus
-    	$('#contact').on('shown.bs.modal', function () {
-		  $('#email-from').focus()
-		})
-		//Add logic to this 
-		$('#send').on('click', function () {
-			var $btn = $(this).button('loading')
-			setTimeout(function(){
-			    $btn.button('reset')
-			    $('#contact').modal('hide')
-			}, 2000);
-		});
-	</script>
-  </body>
+		  ga('create', 'UA-61359637-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script>
+			//Autofocus email input in modal when given focus
+			$('#contact').on('shown.bs.modal', function () {
+			  $('#email-from').focus()
+			})
+			//Add logic to this 
+			$('#send').on('click', function () {
+				var $btn = $(this).button('loading')
+				
+				$.ajax({
+				    url: "//formspree.io/me@ryanralph.net", 
+				    method: "POST",
+				    data: {message: "hello!"},
+				    dataType: "json"
+				});
+			});
+		</script>
+	</body>
 </html>
