@@ -27,6 +27,12 @@
 	<body>
 		<div class="container-fluid text-center">
 			<div class="row">
+				<div class="alert alert-success center hidden" role="alert">
+					Sent! 
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
 
 				<a href="#"><img src="http://www.gravatar.com/avatar/79178899751f1701e50ad5ac9ff386c4?s=200" alt="Ryan Ralph" class="img-circle" /></a>
 				    
@@ -56,7 +62,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title" id="contactModalLabel">Send me an email</h4>
 					</div>
-					<form id="form" action="http://formspree.io/me@ryanralph.net" method="POST">
+					<form id="form">
 						<div class="modal-body">
 							
 							  <div class="form-group">
@@ -68,15 +74,32 @@
 							    <textarea class="form-control required" id="email-body" name="message" rows="10"  placeholder="Message...."></textarea>
 							  </div>
 							  <input type="text" name="_gotcha" style="display:none" />
-							  <input type="hidden" name="_next" value="#thanks" />
+							  <input type="hidden" name="_next" value="#" />
 							<p class="small">If you're a security nut you can find my PGP key <a href="https://keybase.io/ryanralph">here.</a></p>
 						</div>
 						<div class="modal-footer">
-							<input type="submit" value="Send">
 							<button type="button" id="send" class="btn btn-primary" data-loading-text="Sending... " autocomplete="off">Send</button>
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</div>
 					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Error Modal -->
+		<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="contactModalLabel">Error</h4>
+					</div>
+					<div class="modal-body">
+						<p>Check your internet connection or try again later. Also you can bug me on <a href="https://twitter.com/ryanralphdotnet">twitter</a> if you think there's an issue on my end</p>
+					</div>
+					<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -94,6 +117,8 @@
 
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script>
 			//Autofocus email input in modal when given focus
@@ -102,17 +127,18 @@
 			})
 			//Add logic to this 
 			$('#send').on('click', function () {
-				var $btn = $(this);
-				$.ajax({
-				    url: "//formspree.io/me@ryanralph.net", 
-				    method: "POST",
-				    data: $('#form').serialize(),
-				    dataType: "json",
-				    beforeSend: function() { $btn.button('loading'); },
-  					success: function(data) { $('#contact').modal('toggle'); alert("sent"); },
-  					error: function(err) { $btn.button('reset'); alert("error");}
-				});
-				
+				if($("#form").valid()) {
+					var $btn = $(this);
+					$.ajax({
+					    url: "//formspree.io/me@ryanralph.net", 
+					    method: "POST",
+					    data: $('#form').serialize(),
+					    dataType: "json",
+					    beforeSend: function() { $btn.button('loading'); },
+	  					success: function(data) { $('#contact').modal('toggle'); $('#alert').show(); },
+	  					error: function(err) { $btn.button('reset'); $('#error').modal('toggle');}
+					});
+				}
 			});
 		</script>
 	</body>
