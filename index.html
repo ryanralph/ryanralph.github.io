@@ -110,8 +110,9 @@
 		  ga('send', 'pageview');
 
 		</script>
+		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
+		<!-- jQuery Form validator-->
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script>
@@ -119,7 +120,7 @@
 			$('#contact').on('shown.bs.modal', function () {
 			  $('#email-from').focus()
 			})
-			//Add logic to this 
+
 			$('#send').on('click', function () {
 				if($("#form").valid()) {
 					var $btn = $(this);
@@ -129,13 +130,18 @@
 					    data: $('#form').serialize(),
 					    dataType: "json",
 					    beforeSend: function() { $btn.button('loading'); },
-	  					success: function(data) { $('#contact').modal('toggle'); 
-	  							$("#main").before('<div id="alert" class="alert alert-success center" role="alert">' +
-									'Sent!' +
-									'<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
-									  '<span aria-hidden="true">&times;</span>' +
-									'</button>' +
-								'</div>');  },
+	  					success: function(data) { 
+	  						$('#contact').modal('toggle'); 
+	  						$("#main").before('<div id="alert" class="alert alert-success center" role="alert">' +
+								'Sent!' +
+								'<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
+								'<span aria-hidden="true">&times;</span>' +
+								'</button>' +
+								'</div>'
+							$("#form")[0].reset();
+							$btn.button('reset');
+							);  
+	  					},
 	  					error: function(err) { $btn.button('reset'); $('#error').modal('toggle');}
 					});
 				}
