@@ -15,6 +15,8 @@ categories:
 date: 2017-06-27 22:18:07
 ---
 
+![C3 Installation](/images/c3-testing-grounds-2-signals.jpg)
+
 Recently I was involved in a collaboration with artist [Jon Butt](https://www.jonbutt.com/) and my work colleague Alexander Radevski, an industrial designer. The work was displayed at c3 art space in Abbotsford and at [Testing Grounds](http://www.testing-grounds.com.au) creative space in Southbank.<!--more-->
 
 I've linked to Jon's posts about the project which contain more information and photos.

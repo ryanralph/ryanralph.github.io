@@ -16,15 +16,13 @@ categories:
 date: 2015-04-11 01:15:02
 ---
 
-[caption id="attachment_274" align="aligncenter" width="814"]![](http://blog.ryanralph.net/wp-content/uploads/2015/04/IMG_20150410_1234142-2048x984.jpg) Still missing a few things[/caption]
-
-&nbsp;
+![](/images/3d-printer-prusa-i3-build-log-0.jpg)
 
 I've decided to get into the 3d printing space and decided to build a reprap P[rusa i3](http://reprap.org/wiki/Prusa_i3). Based on community feedback it seems like a good solid printer for a first timer as well as relatively accessible in terms of acquring parts. I've spent a fair bit of time trawling ebay and aliexpress in order to pick up all the parts. Hopefully I can keep the total sub $500.<!--more-->
 
 This post will be my list of parts I've bought, how much they cost me in $AUD, not necessarily a complete BOM. I will try and keep it up to date and <del>strike out</del> things I haven't used.
 
-## Rods
+# Rods
 
 *   2x Smooth rod Ø8x320 mm - Purchased as a kit from [Fabricature](http://www.fabricature.com.au/home/5-8mm-smooth-rod-set.html) $30
 *   2x Smooth rod Ø8x350 mm
@@ -34,7 +32,7 @@ This post will be my list of parts I've bought, how much they cost me in $AUD, n
 *   2x Threaded rod M10x380 mm
 **section cost:** $37
 
-## Movement
+# Movement
 
 *   12x Linear LM8UU bearing - [Aliexpress](http://www.aliexpress.com/wholesale?catId=100004738&amp;initiative_id=AS_20150705191436&amp;SearchText=lm8uu) ~$12
 *   2x 5mm-5mm coupler - [Aliexpress](http://www.aliexpress.com/item/20pcs-lot-3D-printer-Stepper-Motor-Flexible-Coupling-Coupler-Shaft-Couplings-5-mm-5mm-25-mm/1906345631.html) ~$3
@@ -45,7 +43,7 @@ This post will be my list of parts I've bought, how much they cost me in $AUD, n
 *   2x GT2 Pulleys - comes with belt
 **section cost: **$95.50
 
-## Heatbed
+# Heatbed
 
 *   PCB Heatbed - [Aliexpress](http://www.aliexpress.com/item/3D-Printer-Parts-MK2B-Heatbed-LED-Resistor-Cable-100K-ohm-Thermistors-PCB-Heated-Bed-White-Red/32268174955.html) ~$12
 *   Glass plate - [Aliexpress](http://www.aliexpress.com/item/Free-shipping-3d-printer-ReprapMK2-Borosilicate-glass-for-headbed-size-213-200-3mm/1313851457.html) ~$19
@@ -103,7 +101,7 @@ I bought a lot, probably too much. I definitely doubled up on some stuff which I
 
 Definitely should have considered a kit instead of hardware individually. That said now I have plenty of spare stuff to use for other stuff, not a complete waste.
 
-## Core parts
+# Core parts
 
 *   Hotend - [Aliexpress](http://www.aliexpress.com/item/FreeShipping-Long-distance-3D-Printer-J-head-Hotend-for-1-75mm-3-0mm-E3D-Bowden-Extruder/2041826923.html) ~$12 (Will be buying a much better non-clone hotend in the very near future)
 *   Frame - sourced locally $??
@@ -111,7 +109,7 @@ Definitely should have considered a kit instead of hardware individually. That 
 *   Extruder - included in printed parts
 **section cost:** $67
 
-## Other
+# Other
 
 *   Hobbed bolt - [Aliexpress](http://www.aliexpress.com/item/2pcs-lot-3-D-printer-accessory-Wade-s-extruder-hobbed-bolt-reprap-M8-wire-feed-teeth/1564323966.html) ~$3
 *   springs for [anti-backlash z axis](https://www.thingiverse.com/thing:694575) mod -  [Aliexpress](http://www.aliexpress.com/item/10pcs-lot-3-D-printer-accessory-feeder-spring-for-Ultimaker-Makerbot-Wade-extruder-nickel-plating-1/1830997495.html) ~$2.50
@@ -128,13 +126,12 @@ Definitely should have considered a kit instead of hardware individually. That 
 
 **Grand total: **$432 before frame
 
-## Conclusion
+# Conclusion
 
 There definitely needs to be room in the budget for another hotend and potentially in the future nicer smooth rods. I think with the parts I've purchased I should have a better (and cheaper) prusa i3 than any of the kits available in Australia or any of the international kits + postage.
 
-&nbsp;
 
-### Acknowledgements
+# Acknowledgements
 
 [http://reprap.org/wiki/JBFromOZ#JBFromOZ.27s_recommended_i3_Build](http://reprap.org/wiki/JBFromOZ#JBFromOZ.27s_recommended_i3_Build)
 

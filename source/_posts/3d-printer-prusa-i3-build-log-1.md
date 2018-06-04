@@ -16,7 +16,7 @@ categories:
 date: 2015-05-07 22:51:28
 ---
 
-![media-20150430-compressor](http://blog.ryanralph.net/wp-content/uploads/2015/05/media-20150430-compressor-1536x2048.jpg)
+![](/images/3d-printer-prusa-i3-build-log-1.jpg)
 
 In the last few days most of the final parts for my Prusa i3 arrived in the mail. Not looking too bad for a sub $500AUD build if I do say so myself.
 

@@ -12,9 +12,9 @@ categories:
 date: 2015-11-27 12:31:25
 ---
 
-[caption id="" align="aligncenter" width="750"][![RMIT Electric Racing R14e car](http://static1.squarespace.com/static/54dc78cee4b04b6e37e12f59/t/54e027f7e4b094c16040d589/1423976445555/?format=750w)](http://rmitelectricracing.com/r14e/) RMIT Electric Racing R14e car[/caption]
+![RMIT Electric Racing R14e car](/images/formula-sae-electric-racing-australasia-2015.jpg)
 
-In the next few our team will be competing in the [Formula SAE Australasia](http://www.saea.com.au/page-18124) competition held at Calder Park Raceway here in Melbourne. Over the course of the past year [our team at RMIT](http://rmitelectricracing.com/2015team/) has been designing and building an electric car from scratch. I've only been a part of the team during the second half of the year so have helped more with the building than designing.<!--more-->
+In the next few our team will be competing in the [Formula SAE Australasia](http://www.saea.com.au/page-18124) competition held at Calder Park Raceway here in Melbourne.<!--more--> Over the course of the past year [our team at RMIT](http://rmitelectricracing.com/2015team/) has been designing and building an electric car from scratch. I've only been a part of the team during the second half of the year so have helped more with the building than designing.
 
 For those uninitiated, the FSAE competition is an international student engineering competition in which both combustion and electric vehicles compete across a number of different "static" and "dynamic" events. Static events include design and business justifications and dynamic events include skid pad and a 22km endurance race. The Electric side of the competition is relatively new starting around 2007-2008 and considering the relatively short amount of time, electric teams are increasingly competitive against their combustion engine counterparts.
 

@@ -13,9 +13,9 @@ categories:
 date: 2014-02-15 13:00:15
 ---
 
-# [![Arch Linux](http://blog.ryanralph.net/wp-content/uploads/2014/02/ArchlinuxLogo.png)](http://blog.ryanralph.net/wp-content/uploads/2014/02/ArchlinuxLogo.png)
+![](/images/arch-linux-dwm.png)
 
-Having been a primarily Ubuntu user for the past few months I've decided to take the plunge and explore [Arch linux](https://www.archlinux.org/) a bit. For those that are unaware Arch linux is a slimline distro that serves as a solid foundation without any unwanted bloatware. The [Arch way](https://wiki.archlinux.org/index.php/The_Arch_Way) stresses Simplicity, Code elegance and freedom.<!--more-->
+Having been a primarily Ubuntu user for the past few months I've decided to take the plunge and explore [Arch linux](https://www.archlinux.org/) a bit. <!--more-->For those that are unaware Arch linux is a slimline distro that serves as a solid foundation without any unwanted bloatware. The [Arch way](https://wiki.archlinux.org/index.php/The_Arch_Way) stresses Simplicity, Code elegance and freedom.
 
 ## Why switch?
 

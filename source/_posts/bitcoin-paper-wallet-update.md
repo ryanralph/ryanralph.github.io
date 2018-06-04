@@ -15,7 +15,7 @@ categories:
 date: 2014-08-13 07:29:11
 ---
 
-![DIY Piper mounted in hobby box](http://blog.ryanralph.net/wp-content/uploads/2014/08/IMG_20150220_184500-2-2048x1536.jpg)
+![DIY Piper mounted in hobby box](/images/bitcoin-paper-wallet-update.jpg)
 So I said I'd be back with an update on my DIY Piper bitcoin wallet printer and here is a quick rundown.<!--more-->
 
 I've added all my changes to the git repo I set up at [github](https://github.com/ryanralph/DIY-Piper). Since the previous post I've completed the basic circuit to allow for power/status LEDs, a remember/forget switch, shutdown button and importantly the print button. If anyone is interested I can provide a breakdown of the circuit used.
