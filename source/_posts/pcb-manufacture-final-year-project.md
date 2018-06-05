@@ -25,7 +25,7 @@ date: 2016-07-19 14:20:52
 Having completed two orders successfully now I thought it would be a good time to do a review of my preferred PCB Manufacturer, [PCBWay](http://www.pcbway.com/setinvite.aspx?inviteid=18931). **Please note:** this post is part of the coupon program run by [PCBWay](http://www.pcbway.com/setinvite.aspx?inviteid=18931) however my comments are based on the experience of my two orders. I will be using my affiliate link throughout, If you'd prefer to go directly click the [Non-Affiliate link here](http://pcbway.com). I'll update this post with any future notes.
 
 
-![Altium Design 3D view of the R16e Driver Display PCB](/images/pcb-manufacture-final-year-project-2.jpg)
+![Altium Design 3D view of the R16e Driver Display PCB](/images/pcb-manufacture-final-year-project-2.png)
 
 # Final year project &amp; R16e PCBs
 

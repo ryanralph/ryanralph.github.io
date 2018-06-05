@@ -13,7 +13,9 @@ categories:
   - Ramblings
 ---
 
-[caption id="attachment_357" align="aligncenter" width="300"]![Bell rotary telephone goes bluetooth](http://blog.ryanralph.net/wp-content/uploads/2015/06/edited-IMG_20150324_091636-300x225.jpg) Bell rotary telephone goes bluetooth[/caption]
+# Maybe I'll get to this one day, probably not
+
+![Bell rotary telephone goes bluetooth](https://imagegoeshere.jpg)
 
 The idea was to create a bluetooth rotary phone module that can be plugged in using the regular RJ-11 plug and require no modification of the internal phone circuitry
 
