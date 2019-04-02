@@ -87,10 +87,10 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="contactModalLabel">Error</h4>
+						<h4 class="modal-title" id="contactModalLabel">Sent</h4>
 					</div>
 					<div class="modal-body">
-						<p>Check your internet connection or try again later. Also you can bug me on <a href="https://twitter.com/ryanral_ph">twitter</a> if you think there's an issue on my end</p>
+						<p>I Hope to get to your message soon. Also you can bug me on <a href="https://twitter.com/ryanral_ph">twitter</a> if you think it's urgent</p>
 					</div>
 					<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
@@ -144,7 +144,9 @@
 							$btn.button('reset');
 
 	  					},
-	  					error: function(err) { $btn.button('reset'); $('#error').modal('toggle');}
+	  					error: function(err) { 
+							$('#contact').modal('toggle');
+							$btn.button('reset'); $('#error').modal('toggle');}
 					});
 				}
 			});
