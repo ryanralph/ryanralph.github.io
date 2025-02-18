@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <meta name="description" content="The simple homepage of Ryan Ralph">
     <meta name="author" content="Ryan Ralph">
     <link rel="icon" href="favicon.ico">
@@ -34,7 +33,7 @@
 				<h1>Ryan Ralph</h1>
 				<p class="tagline">Electrical Engineer with a focus on Electric Vehicles. Based in Melbourne Australia.</p>
 				<div id="divider"></div>
-				<div id="contactlink"><a href="#contact" id="contactlink" data-toggle="modal" data-target="#contact">me@ryanral.ph</a></div>
+				<div id="contactlink"><a href="mailto:me@ryanral.ph">me@ryanral.ph</a></div>
 
 				<div id="social">
 					<ul class="list-inline">
@@ -50,94 +49,9 @@
 
 		</div><!-- /.container -->
 
-		<!-- Contact modal -->
-		<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="contactModalLabel">Send me an email</h4>
-					</div>
-					<form id="form">
-						<div class="modal-body">
-
-							  <div class="form-group">
-							    <label for="email-from" class="control-label">From:</label>
-							    <input type="email" class="form-control required" id="email-from" name="email" placeholder="Email Address">
-							  </div>
-							  <div class="form-group">
-							    <label for="email-body" class="control-label">Message:</label>
-							    <textarea class="form-control required" id="email-body" name="message" rows="10"  placeholder="Message...."></textarea>
-							  </div>
-							  <input type="text" name="_formsubmit_id" style="display:none" />
-							  <input type="hidden" name="_redirect" value="#" />
-							<p class="small">If you're a security nut you can find my PGP key <a href="https://keybase.io/ryanralph">here.</a></p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" id="send" class="btn btn-primary" data-loading-text="Sending... " autocomplete="off">Send</button>
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<!-- Error Modal -->
-		<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="contactModalLabel">Sent</h4>
-					</div>
-					<div class="modal-body">
-						<p>I Hope to get to your message soon. Also you can bug me on <a href="https://www.linkedin.com/in/rralph/">LinkedIn</a> if you think it's urgent</p>
-					</div>
-					<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
 		<!-- jQuery -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<!-- jQuery Form validator-->
-		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+		<!-- Bootstrap -->
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<script>
-			//Autofocus email input in modal when given focus
-			$('#contact').on('shown.bs.modal', function () {
-			  $('#email-from').focus()
-			})
-
-			$('#send').on('click', function () {
-				if($("#form").valid()) {
-					var $btn = $(this);
-					$.ajax({
-					    url: "//formsubmit.io/send/2d827221-f864-4b3f-80bc-25a444ff413b",
-					    method: "POST",
-					    data: $('#form').serialize(),
-					    dataType: "json",
-					    beforeSend: function() { $btn.button('loading'); },
-	  					success: function(data) {
-	  						$('#contact').modal('toggle');
-	  						$("#main").before('<div id="alert" class="alert alert-success center" role="alert">' +
-								'Sent!' +
-								'<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
-								'<span aria-hidden="true">&times;</span>' +
-								'</button>' +
-								'</div>');
-							$("#form")[0].reset();
-							$btn.button('reset');
-
-	  					},
-	  					error: function(err) { 
-							$('#contact').modal('toggle');
-							$btn.button('reset'); $('#error').modal('toggle');}
-					});
-				}
-			});
-		</script>
 	</body>
 </html>
