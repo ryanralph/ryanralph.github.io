@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Ryan Ralph |
-subtitle: Ryan Ralph's Blog
-description:
+title: Ryan Ralph | Electronics , Smart Home, and Engineering Blog
+subtitle: Tech tips, electronics, DIY, and smart home projects — all in the spare time of an Australian engineer.
+description: "Sharing tech ideas, electronics builds, smart home projects, and hardware hacking — all in the spare time of an Australian engineer."
 keywords: electronics, arduino, raspberry pi, electrical, atmel, avr, linux, cnc, 3d printer, 3d printing
 author: Ryan Ralph
 language: en
@@ -13,7 +13,7 @@ timezone: Australia/Melbourne
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://ryanral.ph
+url: https://blog.ryanralph.net
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -31,7 +31,7 @@ skip_render:
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: true # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
@@ -54,7 +54,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: "uncategorized"
 category_map:
 tag_map:
 
@@ -92,12 +92,12 @@ sitemap:
 # add caption for images
 image_caption:
   enable: true #false to disable
-  class_name: #if you wanna customize the style for the caption,you can assign a class name, default is 'image-caption'
+  class_name: "image-caption" #if you wanna customize the style for the caption,you can assign a class name, default is 'image-caption'
 
-  # imagemin:
-  # enable     : true
-  # interlaced : false
-  # multipass  : false
-  # optimizationLevel: 2
-  # pngquant   : false
-  # progressive: false
+imagemin:
+  enable     : true
+  interlaced : false
+  multipass  : false
+  optimizationLevel: 2
+  pngquant   : false
+  progressive: false

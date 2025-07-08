@@ -2,13 +2,18 @@
 title: About Ryan
 id: 6
 comment: false
-date: 2018-06-05 22:24:56
+date: 2025-07-07 19:53:00
+desc: Melbourne-based Electrical Engineer Ryan Ralph specialises in embedded systems, EVs, and rapid prototyping. Now running his own business, he’s exploring hardware hacking, smart home tech, and electronics repair.
 ---
 
-My name's Ryan Ralph. I'm a graduate of [RMIT University](http://www.rmit.edu.au/) where I studied Electrical Engineering and Business Management. Since completing my degree I have been working with [Aabak](https://aabak.com) on custom robotics projects, notably we designed and built a Robotic barista machine called [Rocky](https://oncealike.com/).
+My name's Ryan Ralph. I’m a Melbourne based Registered Professional Electrical Engineer. I love jumping into complex problems and making things work, seeing projects from conception through to production. From designing custom wiring harnesses, Electric Vehicles, Embedded systems, or helping get a prototype off the ground quickly. I’ve worked across EVs/Automotive, Robotics and industrial tech, and I’m comfortable switching between tools, platforms, and disciplines to get the job done. 
 
-I've worked with many different programming languages, all for different purposes and some of my favourites at the moment are node.js, python and C. I prefer to run either Arch linux or Ubuntu, code in vim and draw PCB's in kiCAD however I'm flexible with all environments.
+These days I run my [own business](https://harnesslogic.com), delivering high-quality, low-MOQ builds and practical engineering support to teams that need reliable solutions fast.
 
-Outside of work I enjoy playing around with electronics and always have a number of projects on the go. I'm interested in startups, bitcoin, new tech, old tech as well as physical/digital security.
+Current interests include:
+- Hardware Hacking (chip off memory dumping and exploiting)
+- Smart Home Automation (Home Assistant)
+- Learning about Watchmaking 
+- Electronics repair
 
-Although I'm not actively looking I am open to working on interesting and exciting projects so [fire me an email ](mailto://blog@ryanralph.net)and we'll chat!
+Although I'm not actively looking I am open to working on interesting and exciting projects so [fire me an email](mailto:blog@ryanralph.net) and we'll chat!

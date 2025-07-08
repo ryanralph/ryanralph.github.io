@@ -24,7 +24,6 @@ So I got my printer calibrated enough to do a first print. I'm a bit ashamed at 
 
 The main source I used in order to get set up was [Triffid Hunter's Calibration Guide](http://reprap.org/wiki/Triffid_Hunter%27s_Calibration_Guide), the other source that was quite useful was [Tom's video](https://www.youtube.com/watch?v=YUPfBJz3I6Y) about calibration of the extruder.<!--more-->
 
-{% youtube e45sw3bdyio %}
 
 ![First 3 prints. Potato quality](/images/3d-printer-prusa-i3-build-log-2-2.jpg)
 

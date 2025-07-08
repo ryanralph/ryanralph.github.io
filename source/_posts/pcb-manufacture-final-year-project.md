@@ -20,9 +20,9 @@ date: 2016-07-19 14:20:52
 
 ![](/images/pcb-manufacture-final-year-project-1.jpg)
 <!--more-->
-## Introduction
+# Introduction
 
-Having completed two orders successfully now I thought it would be a good time to do a review of my preferred PCB Manufacturer, [PCBWay](http://www.pcbway.com/setinvite.aspx?inviteid=18931). **Please note:** this post is part of the coupon program run by [PCBWay](http://www.pcbway.com/setinvite.aspx?inviteid=18931) however my comments are based on the experience of my two orders. I will be using my affiliate link throughout, If you'd prefer to go directly click the [Non-Affiliate link here](http://pcbway.com). I'll update this post with any future notes.
+Having completed two orders successfully now I thought it would be a good time to do a review of my preferred PCB Manufacturer, [PCBWay](https://pcbway.com/g/3bRGsb). **Please note:** this post is part of the coupon program run by [PCBWay](https://pcbway.com/g/3bRGsb) however my comments are based on the experience of my two orders. I will be using my affiliate link throughout, If you'd prefer to go directly click the [Non-Affiliate link here](http://pcbway.com). I'll update this post with any future notes.
 
 
 ![Altium Design 3D view of the R16e Driver Display PCB](/images/pcb-manufacture-final-year-project-2.png)
@@ -38,7 +38,7 @@ As part of the project I am building a Driver display system which will be used 
 
 Following the success of my first order I put in an order for the PCBs that we require for this year's car. Most of the details were the same however we opted for green soldermask and white silkscreen (picture above). The total order came to only $97 USD for five unique boards, and five copies of each.
 
-Developing the boards really was a team effort, we had some of the more experienced team members helping our new first &amp; second year students to design the circuit. We had everything being quality controlled by multiple eyes before being sent off which has resulted in no design faults. Passing down the knowledge of good circuit design and tips &amp; tricks for Altium Designer we can ensure our team has a solid future in the Formula SAE - Electric competition. We'll also be getting some of the newer team members up to standard with hand soldering SMD parts, first though, we'll be getting them to watch the classic [instructional videos from Dave Jones](https://www.youtube.com/watch?v=J5Sb21qbpEQ&amp;list=PL2862BF3631A5C1AA).
+Developing the boards really was a team effort, we had some of the more experienced team members helping our new first &amp; second year students to design the circuit. We had everything being quality controlled by multiple eyes before being sent off which has resulted in no design faults. Passing down the knowledge of good circuit design and tips &amp; tricks for Altium Designer we can ensure our team has a solid future in the Formula SAE - Electric competition. We'll also be getting some of the newer team members up to standard with hand soldering SMD parts, first though, we'll be getting them to watch the classic [instructional videos from Dave Jones](https://www.youtube.com/watch?v=J5Sb21qbpEQ).
 
 
 # PCB Quality &amp; Finish
@@ -48,7 +48,7 @@ The boards were all thoroughly tested and appear to have no obvious faults in th
 
 # Order Process
 
- In my experience the order process goes as follows:
+In my experience the order process goes as follows:
 -Request quote
 -Upload Gerbers/PCBdoc
 -Wait for design review, this process was very quick in my experience
@@ -60,6 +60,6 @@ Along the way I received email updates as well as an SMS from DHL to indicate th
 
 # Summary
 
-All in all, as a cheap PCB manufacturer I would recommend [PCBWay](http://www.pcbway.com/setinvite.aspx?inviteid=18931) over OSHpark or BreadboardKiller for orders in Australia. In my experience OSHpark prices are similar however the delivery time is much slower and even though you get ENIG as standard it's pretty hard to beat [PCBWay](http://www.pcbway.com/setinvite.aspx?inviteid=18931) for the turnaround time.
+All in all, as a cheap PCB manufacturer I would recommend [PCBWay](https://pcbway.com/g/3bRGsb) over OSHpark or BreadboardKiller for orders in Australia. In my experience OSHpark prices are similar however the delivery time is much slower and even though you get ENIG as standard it's pretty hard to beat [PCBWay](https://pcbway.com/g/3bRGsb) for the turnaround time.
 
-Keep up to date with what the team's doing at [RMIT Electric Racing - News](http://rmitelectricracing.com/).
+Keep up to date with what the team's doing at [RMIT Electric Racing - News](https://www.rmitmotorsport.com/).
