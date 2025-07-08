@@ -82,6 +82,11 @@ To make this all a bit neater I have a few extra HA Automations to tie it all to
 
 This combination of Automations works for my soldering iron, desoldering and hot air stations. Let me know if you want the .YAMLs, this is usually just easier to set up from the UI nowadays.
 
+## Video
+
+{% youtube dKqJysCQ_qM %}
+You can hear the relay click on shortly after I pick up the soldering iron
+
 ## Links
 [Home Assistant](https://www.home-assistant.io/) - Well worth the $5USD paid subscription. 
 [ESPHome](https://esphome.io) - This documentation is some of the best out there, well done to the developers.
