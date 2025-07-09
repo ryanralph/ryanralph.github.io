@@ -12,6 +12,7 @@ desc: >-
   using ESPHome, allowing full automation and voice/app control via Home
   Assistant.
 date: 2025-07-08 13:12:11
+comment: true
 ---
 
 
